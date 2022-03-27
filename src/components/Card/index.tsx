@@ -6,7 +6,7 @@ import {
   Title
 } from './styles';
 
-const Card: React.FC<cardProps> = ({ title }) => {
+const Card: React.FC<cardProps> = ({ title, ...rest }) => {
   return (
     <Container>
       <Title>{title}</Title>

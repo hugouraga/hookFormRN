@@ -1,6 +1,6 @@
 import styled from 'styled-components/native';
 import {
-  TouchableOpacity
+  RectButtonProperties
 } from 'react-native-gesture-handler';
 
 export const Container = styled.TouchableOpacity`
@@ -8,7 +8,7 @@ export const Container = styled.TouchableOpacity`
   border-radius: 6px;
   margin-right: 12px;
   margin-left: 12px;
-  background-color: ${({ theme }) => theme.colors.background};
+  background-color: ${({ theme }) => theme.colors.shape};
   margin-top: 16px;
   justify-content: center;
   padding-right: 16px;
