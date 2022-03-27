@@ -1,12 +1,25 @@
 // import liraries
 import React from 'react';
-import { View, Text } from 'react-native';
+import { ScrollView } from 'react-native';
+
+import Card from '../../components/Card';
+import Header from '../../components/Header';
+
+import {
+  Container,
+} from './styles';
 
 function Home() {
   return (
-    <View>
-      <Text>Home</Text>
-    </View>
+    <>
+      <Header>Formulários</Header>
+      <Container>
+        <ScrollView >
+          <Card title='registar cartão' />
+          <Card title='registar dados do usuário' />
+        </ScrollView>
+      </Container>
+    </>
   );
 }
 
